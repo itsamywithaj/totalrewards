@@ -2,23 +2,26 @@ rm(list = ls())
 install.packages("tidyverse")
 library("tidyverse")
 
-# Exported from Workday 2023-02-16
+# Exported from Workday 2023-02-16 ====
 raw_report <- read.csv("Salary_Report_with_Management_Job_Levels_-_Compensation.csv")
 names(raw_report) <- tolower(raw_report[3,]) # Rename columns
 raw_report <- raw_report[-(1:3),] # Remove filler rows
 names(raw_report)
-div_cost_lead <- raw_report %>% 
+
+# Clean for the columns of interest =====
+div_cost_lead <- raw_report %>% # Rename variables for easy reference
   mutate(company = as.factor(company),
          division = as.factor(division),
          cost_center = as.factor(`cost center`),
-         lead = as.factor(`management chain - level 04`),
+         lead = as.factor(`management chain - level 04`), 
          emp_id = `employee id`) %>% 
   arrange(lead, emp_id) %>%
   select(emp_id, name, company, lead,division, cost_center)
+# management chain level 4 reports to Mark or another CEO
 levels(as.factor(raw_report$`management chain - level 04`))
 levels(div_cost_lead$cost_center)
 
-z <- raw_report %>% 
+z <- raw_report %>% # for those without management level 4, replace with level 3
   filter(`management chain - level 04`=="") %>% 
   arrange(`employee id`) %>% 
   select(`employee id`,name, company, `management chain - level 03`, division, `cost center`)
@@ -26,7 +29,7 @@ names(z)[c(1,4,6)] <- c("emp_id","lead","cost_center")
 div_cost_lead <- rbind(div_cost_lead[-(1:31),],z) %>% arrange(lead,emp_id)
 rm(z)
 
-# ========================================================================
+# === Filtering out rows for each division =================================
 # By division, which rows have an employee with a different "lead" value
 # than expected?
 # Org chart: https://bmgf.sharepoint.com/:p:/r/sites/gatesetc/_layouts/15/Doc.aspx?sourcedoc=%7B2B4664A5-E996-4B75-8F52-C78CDA0300AC%7D&file=High%20Level%20Foundation%20Org%20Chart%20-%20March%202021.pptx&action=edit&mobileredirect=true&web=1&cid=1cc92d59-d131-4b68-9713-b256a749a1d9
@@ -87,7 +90,7 @@ fin <- div_cost_lead %>% # CFO, Carolyn Ainslie
   filter(division == "91000 Finance and Resource Planning",
          lead != "Carolyn Ainslie",
          lead != "Mark Suzman")
-# ============ Dataset: Employees where division and chief/president don't align
+# Dataset for export. Employees where division and chief/president don't match ==== 
 div_lead_full <- rbind(gh, gpa, usp, fso, ggo, ge, exec, comms, fin)
 names(div_lead_full)[1] <- "employee id"
 z <- div_lead_full %>% select(`employee id`)
