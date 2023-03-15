@@ -519,3 +519,202 @@ c_39 <- data.frame(d_39[7,3], # position
 
 names(c_39) <- header
 z <- rbind(z,c_39)
+
+# Tab 40 ---------
+d_40 <- read_excel('_All_Positions_Report.xlsx', sheet = "40")
+c_40 <- data.frame(d_40[7,3], # position
+                   d_40[17,3], # base 25
+                   d_40[18,3], # base 50
+                   d_40[19,3], # base 75
+                   d_40[17,11], # total 25
+                   d_40[18,11], # total 50
+                   d_40[19,11]) # total 75 
+
+names(c_40) <- header
+z <- rbind(z,c_40)
+
+# Tab 41 ---------
+d_41 <- read_excel('_All_Positions_Report.xlsx', sheet = "41")
+c_41 <- data.frame(d_41[7,3], # position
+                   d_41[17,3], # base 25
+                   d_41[18,3], # base 50
+                   d_41[19,3], # base 75
+                   d_41[17,11], # total 25
+                   d_41[18,11], # total 50
+                   d_41[19,11]) # total 75 
+
+names(c_41) <- header
+z <- rbind(z,c_41)
+
+# Tab 42 ---------
+d_42 <- read_excel('_All_Positions_Report.xlsx', sheet = "42")
+c_42 <- data.frame(d_42[7,3], # position
+                   d_42[17,3], # base 25
+                   d_42[18,3], # base 50
+                   d_42[19,3], # base 75
+                   d_42[17,11], # total 25
+                   d_42[18,11], # total 50
+                   d_42[19,11]) # total 75 
+
+names(c_42) <- header
+z <- rbind(z,c_42)
+
+# Tab 43 ---------
+d_43 <- read_excel('_All_Positions_Report.xlsx', sheet = "43")
+c_43 <- data.frame(d_43[7,3], # position
+                   d_43[17,3], # base 25
+                   d_43[18,3], # base 50
+                   d_43[19,3], # base 75
+                   d_43[17,11], # total 25
+                   d_43[18,11], # total 50
+                   d_43[19,11]) # total 75 
+
+names(c_43) <- header
+z <- rbind(z,c_43)
+
+# Tab 44 ---------
+d_44 <- read_excel('_All_Positions_Report.xlsx', sheet = "44")
+c_44 <- data.frame(d_44[7,3], # position
+                   d_44[17,3], # base 25
+                   d_44[18,3], # base 50
+                   d_44[19,3], # base 75
+                   d_44[17,11], # total 25
+                   d_44[18,11], # total 50
+                   d_44[19,11]) # total 75 
+
+names(c_44) <- header
+z <- rbind(z,c_44)
+
+# Tab 45 ---------
+d_45 <- read_excel('_All_Positions_Report.xlsx', sheet = "45")
+c_45 <- data.frame(d_45[7,3], # position
+                   d_45[17,3], # base 25
+                   d_45[18,3], # base 50
+                   d_45[19,3], # base 75
+                   d_45[17,11], # total 25
+                   d_45[18,11], # total 50
+                   d_45[19,11]) # total 75 
+
+names(c_45) <- header
+z <- rbind(z,c_45)
+
+# Tab 46 ---------
+d_46 <- read_excel('_All_Positions_Report.xlsx', sheet = "46")
+c_46 <- data.frame(d_46[7,3], # position
+                   d_46[17,3], # base 25
+                   d_46[18,3], # base 50
+                   d_46[19,3], # base 75
+                   d_46[17,11], # total 25
+                   d_46[18,11], # total 50
+                   d_46[19,11]) # total 75 
+
+names(c_46) <- header
+z <- rbind(z,c_46)
+
+# Tab 47 ---------
+d_47 <- read_excel('_All_Positions_Report.xlsx', sheet = "47")
+c_47 <- data.frame(d_47[7,3], # position
+                   d_47[17,3], # base 25
+                   d_47[18,3], # base 50
+                   d_47[19,3], # base 75
+                   d_47[17,11], # total 25
+                   d_47[18,11], # total 50
+                   d_47[19,11]) # total 75 
+
+names(c_47) <- header
+z <- rbind(z,c_47)
+
+# Tab 48 ---------
+d_48 <- read_excel('_All_Positions_Report.xlsx', sheet = "48")
+c_48 <- data.frame(d_48[7,3], # position
+                   d_48[17,3], # base 25
+                   d_48[18,3], # base 50
+                   d_48[19,3], # base 75
+                   d_48[17,11], # total 25
+                   d_48[18,11], # total 50
+                   d_48[19,11]) # total 75 
+
+names(c_48) <- header
+z <- rbind(z,c_48)
+
+# Tab 49 ---------
+d_49 <- read_excel('_All_Positions_Report.xlsx', sheet = "49")
+c_49 <- data.frame(d_49[7,3], # position
+                   d_49[17,3], # base 25
+                   d_49[18,3], # base 50
+                   d_49[19,3], # base 75
+                   d_49[17,11], # total 25
+                   d_49[18,11], # total 50
+                   d_49[19,11]) # total 75 
+
+names(c_49) <- header
+z <- rbind(z,c_49)
+
+# Tab 50 ---------
+d_50 <- read_excel('_All_Positions_Report.xlsx', sheet = "50")
+c_50 <- data.frame(d_50[7,3], # position
+                   d_50[17,3], # base 25
+                   d_50[18,3], # base 50
+                   d_50[19,3], # base 75
+                   d_50[17,11], # total 25
+                   d_50[18,11], # total 50
+                   d_50[19,11]) # total 75 
+
+names(c_50) <- header
+z <- rbind(z,c_50)
+
+# Tab 51 ---------
+d_51 <- read_excel('_All_Positions_Report.xlsx', sheet = "51")
+c_51 <- data.frame(d_51[7,3], # position
+                   d_51[17,3], # base 25
+                   d_51[18,3], # base 50
+                   d_51[19,3], # base 75
+                   d_51[17,11], # total 25
+                   d_51[18,11], # total 50
+                   d_51[19,11]) # total 75 
+
+names(c_51) <- header
+z <- rbind(z,c_51)
+
+# Tab 52 ---------
+d_52 <- read_excel('_All_Positions_Report.xlsx', sheet = "52")
+c_52 <- data.frame(d_52[7,3], # position
+                   d_52[17,3], # base 25
+                   d_52[18,3], # base 50
+                   d_52[19,3], # base 75
+                   d_52[17,11], # total 25
+                   d_52[18,11], # total 50
+                   d_52[19,11]) # total 75 
+
+names(c_52) <- header
+z <- rbind(z,c_52)
+
+# Tab 53 ---------
+d_53 <- read_excel('_All_Positions_Report.xlsx', sheet = "53")
+c_53 <- data.frame(d_53[7,3], # position
+                   d_53[17,3], # base 25
+                   d_53[18,3], # base 50
+                   d_53[19,3], # base 75
+                   d_53[17,11], # total 25
+                   d_53[18,11], # total 50
+                   d_53[19,11]) # total 75 
+
+names(c_53) <- header
+z <- rbind(z,c_53)
+
+# Tab 54 ---------
+d_54 <- read_excel('_All_Positions_Report.xlsx', sheet = "54")
+c_54 <- data.frame(d_54[7,3], # position
+                   d_54[17,3], # base 25
+                   d_54[18,3], # base 50
+                   d_54[19,3], # base 75
+                   d_54[17,11], # total 25
+                   d_54[18,11], # total 50
+                   d_54[19,11]) # total 75 
+
+names(c_54) <- header
+z <- rbind(z,c_54)
+
+# Bind all the rows ------
+all_pos_merged <- merge(all_pos,z) %>% arrange(as.numeric(sheet))
+write.csv(all_pos_merged,file = "all_pos_merged.csv",row.names = FALSE)
